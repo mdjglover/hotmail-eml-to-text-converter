@@ -1,0 +1,4 @@
+*.ipynb
+hotmail_eml_to_txt_converter/__pycache__
+hotmail_eml_to_txt_converter/app/__pycache__/
+hotmail_eml_to_txt_converter/parser/__pycache__/
