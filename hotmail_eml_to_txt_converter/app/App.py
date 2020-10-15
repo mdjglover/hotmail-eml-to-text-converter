@@ -33,7 +33,7 @@ class AppController():
             return
 
         # Get all full file paths of .eml files    
-        files = [self.source_directory_path + "/" + f for f in listdir(self.source_directory_path) if isfile(join(self.source_directory_path, f))]
+        files = [self.source_directory_path + "/" + f for f in listdir(self.source_directory_path) if isfile(join(self.source_directory_path, f)) and f.endswith(".eml")]
 
         if len(files) == 0:
             messagebox.showerror("Error", f"No .eml files were found in {self.source_directory_path}")
