@@ -56,9 +56,8 @@ class AppController():
 
                 total_emails += 1
         
-        completion_text = f"""{len(files)} .eml files were found in {self.source_directory_path}.
-        {total_emails} .txt files have been output to {self.output_directory_path}
-        """
+        completion_text =  f"{len(files)} .eml files were found in {self.source_directory_path}\n"
+        completion_text += f"{total_emails} .txt files have been output to {self.output_directory_path}"
 
         messagebox.showinfo("Complete", completion_text)
     
